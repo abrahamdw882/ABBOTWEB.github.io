@@ -127,6 +127,17 @@
             min-height: calc(100vh - 60px); /* Adjust for header height */
             position: relative;
         }
+        @media (max-width: 768px) {
+    ul.menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    ul.menu li {
+        display: inline-block;
+        margin: 0 10px; /* Add some horizontal margin */
+    }
+        }
     </style>
 </head>
 <body>
