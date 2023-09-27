@@ -1,26 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime-Arequipa</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            background-color: rgb(151, 326, 2);
-            font-family: Arial, sans-serif;
-        margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
+        body, ul {
+            margin: 0;
+            padding: 0;
         }
 
-        /* Your existing CSS styles */
+        /* Set a background color and font for the body */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-        /* Style for the footer */
-         footer {
+        /* Style the header and navigation */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        ul.menu {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        ul.menu li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        ul.menu li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Style the hero section */
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        /* Style the container */
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container p {
+            font-size: 16px;
+        }
+
+        /* Style the cursor animation */
+        .cursor {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Style the buttons */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        /* Style the footer */
+        footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            flex-shrink: 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
+
         footer p {
             margin: 0;
         }
@@ -31,134 +117,81 @@
             margin: 0 10px;
         }
 
-        /* Add hover effect for footer links */
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /*Ab,s Style for buttons */
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db; /* Change this but give credit to Abraham Dwamena  */
-            color: #fff; /* Text color for the button */
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease; 
-        }
-
-        /* Ab,s Style for button hover effect */
+        /* Add hover effect to buttons */
         .button:hover {
-            background-color: #2980b9; /* Change this to the hover color */
-        }
-     
-
-        /* Style for buttons */
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;  
-            color: #fff; /* Text color for the button */
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            background-color: #0056b3;
         }
 
-        /* Style for button hover effect */
-        .button:hover {
-            background-color: #2980b9; /* Change this to the hover color */
+        /* Ensure the footer stays at the bottom */
+        .container-wrapper {
+            min-height: calc(100vh - 60px); /* Adjust for header height */
+            position: relative;
         }
-        /* Style for the menu */
-.menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #333; /* Background color for the menu */
-}
-
-.menu li {
-    display: inline;
-}
-
-.menu li a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #fff; /* Text color for menu items */
-}
-
-.menu li a:hover {
-    background-color: #555; 
-            }
-        keyframes blink {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-}
     </style>
 </head>
 <body>
-    <div>
-     <ul class="menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-     </ul>
-    </div>
-    <br>
-    <img src="im.jpg" alt="" height="30%">
-    <div>
-        <p> ABRAHAM DWAMENA ©AB BOT DEV</p>
-    </div>
-    <!-- AB html contents -->
-    <div class="container">
-    <h1>Welcome to my website::<span id="text"></span><span class="cursor">|</span></h1>
-    <p id="additional-text"></p>
-</div>
-
-
-    <div>
-        <p><a class="button" href="alight_motion.html">Click to download alight motion</a></p>
-    </div>
-    <br>
-<div>
-    <br>
-    <a class="button" href="about.html">😇😇Click to go to Nella😇😇</a>
-</div>
-    <br>
-    <!-- AB HTML CONTENTS  -->
-<br>
-    <a class="button" href="ab.html">🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿💕</a>
-<br>
-    <ul>
-        <li>follow me on TikTok</li>
-        <li><a class="button" href="https://vm.tiktok.com/ZMjhK9d5t/">click To Go to my TikTok page</a></li>
-        <li>like my videos</li>
-        <li>Thanks for visiting</li>
-    </ul>
-    <br>
-    <div>
-        <a class="button" href="Login.html">GO TO ANIME AREQUIPA LOGIN PAGE</a>
-    </div>
-    <br>
-    <br>
-
-    <a class="button" href="portfolio.html">❤️❤️❤️👉👉GO TO MY PORTFOLIO 🌛🌛🌛❤️</a>
-     <footer>
-        <div>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-wrapper">
+        <main>
+            <section class="hero">
+                <img src="im.jpg" alt="Hero Image">
+                <div class="hero-text">
+                    <h1>Welcome to Anime-Arequipa</h1>
+                    <p id="text"></p>
+                    <p class="cursor">|</p>
+                </div>
+            </section>
+            <section class="content">
+                <div class="container">
+                    <p>ABRAHAM DWAMENA © AB BOT DEV</p>
+                </div>
+                <div class="container">
+                    <h2>Discover the World of Anime</h2>
+                    <p id="additional-text"></p>
+                </div>
+                <div class="container">
+                    <a class="button" href="alight_motion.html">Download Alight Motion</a>
+                </div>
+                <div class="container">
+                    <a class="button" href="about.html">😇😇 Click to meet Nella 😇😇</a>
+                </div>
+                <div class="container">
+                    <a class="button" href="ab.html">🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿💕</a>
+                </div>
+                <ul class="container">
+                    <li>Follow me on TikTok</li>
+                    <li><a class="button" href="https://vm.tiktok.com/ZMjhK9d5t/">Go to TikTok</a></li>
+                    <li>Like my videos</li>
+                    <li>Thanks for visiting</li>
+                </ul>
+                <div class="container">
+                    <a class="button" href="Login.html">Go to Anime Arequipa Login Page</a>
+                </div>
+                <div class="container">
+                    <a class="button" href="portfolio.html">❤️❤️❤️ Go to My Portfolio ❤️❤️❤️</a>
+           
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
             <p>&copy; 2023 Abraham Dwamena</p>
         </div>
-        <div>
+        <div class="footer-content">
             <a href="mailto:abrahamdw882@gmail.com">Contact</a>
             <a href="#">Privacy Policy</a>
         </div>
-     </footer>
-</body>
-    <script>
+    </footer>
+      <script>
     const textElement = document.getElementById('text');
     const cursorElement = document.querySelector('.cursor');
     const additionalTextElement = document.getElementById('additional-text');
@@ -214,4 +247,5 @@
         type();
     });
         </script>
-        </html>
+</body>
+    </html>
