@@ -10,14 +10,14 @@
 </p>
 </p>
 <p align="center">
-<p a href="https://wa.me/254110377776"><img src="https://img.shields.io/badge/Contact Kinflux-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://wa.me/254110377776"><img src="https://img.shields.io/badge/Contact Kinflux-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 <br>
 <br>
 <a href="https://wa.me//233242858727"><img src="https://img.shields.io/badge/contact Philemon-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"  /><br>
 </p>
   <br>
-  <div>
+  
   <p>
 <a href="https://wa.me//233242858727"><img src="https://img.shields.io/badge/contact Philemon-25D366?style=for-the-badge&logo=whatsapp
 
