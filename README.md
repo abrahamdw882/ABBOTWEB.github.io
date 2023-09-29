@@ -9,7 +9,6 @@
 <a href="https://wa.me//233531737439"><img src="https://img.shields.io/badge/contact Maverick-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"  /><br>
 </p>
 </p>
-  <div>
 <p align="center">
 <p a href="https://wa.me/254110377776"><img src="https://img.shields.io/badge/Contact Kinflux-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
