@@ -1,142 +1,221 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime-Arequipa</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body, ul {
             margin: 0;
             padding: 0;
         }
 
-        /* Set a background color and font for the body */
+        
         body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            background-color: #f4f4f4;
+            font-family: 'Poppins', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        /* Style the header and navigation */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        
         header {
-            background-color: #333;
+            background: linear-gradient(135deg, #333, #444);
             color: #fff;
             padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         ul.menu {
-            list-style-type: none;
-            text-align: center;
-        }
-
-        ul.menu li {
-            display: inline;
-            margin: 0 20px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0;
         }
 
         ul.menu li a {
-            text-decoration: none;
             color: #fff;
             font-weight: bold;
             font-size: 18px;
+            text-transform: uppercase;
         }
 
-        /* Style the hero section */
+        ul.menu li a:hover {
+            text-decoration: underline;
+            color: #f0a500;
+        }
+
         .hero {
             text-align: center;
-            padding: 40px 0;
-        }
-
-        .hero img {
-            max-width: 100%;
-            height: auto;
+            padding: 60px 20px;
+            background: url('https://th.bing.com/th/id/OIP.aRVeFXMZnD5eU_M0zzMeOAHaEu?rs=1&pid=ImgDetMain') no-repeat center center/cover;
+            color: #ca2929;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         .hero h1 {
-            font-size: 36px;
-            margin-top: 20px;
+            font-size: 48px;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
         }
 
-        /* Style the container */
-        .container {
-            text-align: center;
-            margin-top: 20px;
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
         }
 
-        .container p {
-            font-size: 16px;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
-        /* Style the cursor animation */
-        .cursor {
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0;
-            }
-        }
-
-        /* Style the buttons */
+      
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #007BFF;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #007BFF, #0056b3);
             color: #fff;
-            text-decoration: none;
+            border: none;
             border-radius: 5px;
-            margin: 10px;
             font-size: 16px;
+            text-transform: uppercase;
+            margin: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
         }
 
-        /* Style the footer */
-        footer {
-            background-color: #333;
-            color: #fff;
+        .button:hover {
+            background: linear-gradient(135deg, #0056b3, #003580);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .container {
             text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            padding: 20px;
         }
 
-        footer p {
-            margin: 0;
+        .container h2 {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+            margin-top: auto;
         }
 
         footer a {
-            color: #fff;
+            color: #f0a500;
             text-decoration: none;
             margin: 0 10px;
         }
 
-        /* Add hover effect to buttons */
-        .button:hover {
-            background-color: #0056b3;
+        footer a:hover {
+            text-decoration: underline;
         }
 
-        /* Ensure the footer stays at the bottom */
-        .container-wrapper {
-            min-height: calc(100vh - 60px); /* Adjust for header height */
-            position: relative;
+        #dynamic-text{
+            color: #3778d3;
+
         }
+
+        h1{
+            color:#222;
+        }
+
         @media (max-width: 768px) {
-    ul.menu {
-        flex-direction: row;
-        justify-content: center;
-    }
+            .hero h1 {
+                font-size: 28px;
+            }
 
-    ul.menu li {
-        display: inline-block;
-        margin: 0 10px; /* Add some horizontal margin */
-    }
+            .button {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+
+            ul.menu {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            header {
+                padding: 5px 0;
+                flex-direction: column;
+            }
+
+            ul.menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            ul.menu li a {
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 24px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .button {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+        }
+
+
+
+
+        @media (max-width: 375px) {
+            header {
+                padding: 5px 0;
+                flex-direction: column;
+            }
+
+            ul.menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            ul.menu li a {
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 24px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .button {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
         }
     </style>
 </head>
@@ -151,112 +230,68 @@
             </ul>
         </nav>
     </header>
-    <div class="container-wrapper">
-        <main>
-            <section class="hero">
-                <img src="im.jpg" alt="Hero Image">
-                <div class="hero-text">
-                    <h1>Welcome to Anime-Arequipa</h1>
-                    <p id="text"></p>
-                    <p class="cursor">|</p>
-                </div>
-            </section>
-            <section class="content">
-                <div class="container">
-                    <p>ABRAHAM DWAMENA © AB BOT DEV</p>
-                </div>
-                <div class="container">
-                    <h2>Discover the World of Anime</h2>
-                    <p id="additional-text"></p>
-                </div>
-                <div class="container">
-                    <a class="button" href="alight_motion.html">Download Alight Motion</a>
-                </div>
-                <div class="container">
-                    <a class="button" href="about.html">😇😇 Click to meet Nella 😇😇</a>
-                </div>
-                <div class="container">
-                    <a class="button" href="ab.html">🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿🧿💕</a>
-                </div>
-                <ul class="container">
-                    <li>Follow me on TikTok</li>
-                    <li><a class="button" href="https://vm.tiktok.com/ZMjhK9d5t/">Go to TikTok</a></li>
-                    <li>Like my videos</li>
-                    <li>Thanks for visiting</li>
-                </ul>
-                <div class="container">
-                    <a class="button" href="Login.html">Go to Anime Arequipa Login Page</a>
-                </div>
-                <div class="container">
-                    <a class="button" href="portfolio.html">❤️❤️❤️ Go to My Portfolio ❤️❤️❤️</a>
-           
-            </div>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Anime-Arequipa</h1>
+            <p id="dynamic-text"></p>
+        </section>
+
+        <section class="container">
+            <h2>Discover the World of Anime</h2>
+            <p>Explore, create, and share your love for anime content!</p>
+            <a class="button" href="alight_motion.html">Download Alight Motion</a>
+            <a class="button" href="about.html">Meet Nella 😇</a>
+            <a class="button" href="portfolio.html">View My Portfolio ❤️</a>
+        </section>
+
+        <section class="container">
+            <h2>Connect with Me</h2>
+            <p>Follow me on TikTok and stay updated with my latest projects.</p>
+            <a class="button" href="https://vm.tiktok.com/ZMjhK9d5t/" target="_blank">Follow on TikTok</a>
         </section>
     </main>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 Abraham Dwamena</p>
-        </div>
-        <div class="footer-content">
-            <a href="mailto:abrahamdw882@gmail.com">Contact</a>
-            <a href="#">Privacy Policy</a>
-        </div>
-    </footer>
-      <script>
-    const textElement = document.getElementById('text');
-    const cursorElement = document.querySelector('.cursor');
-    const additionalTextElement = document.getElementById('additional-text');
-    const texts = [
-        "My name is Abraham Dwamena",
-        "a developer",
-        "an editor",
-        "a YouTuber",
-        "an app dev",
-        "cool and fun to be with 🤪",
-        "God is good",
-        "so love Jesus"
-    ];
-    let textIndex = 0;
-    let charIndex = 0;
 
-    function type() {
-        if (charIndex < texts[textIndex].length) {
-            textElement.textContent += texts[textIndex].charAt(charIndex);
-            charIndex++;
-            setTimeout(type, 100); // Adjust the typing speed here (milliseconds)
-        } else {
-            // Show additional text for a few seconds
-            if (textIndex !== texts.length - 1) {
-                setTimeout(erase, 1500);
+    <footer>
+        <p>&copy; 2024 Abraham Dwamena | <a href="mailto:abrahamdw882@gmail.com">Contact</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        const dynamicText = document.getElementById('dynamic-text');
+        const phrases = [
+            "My name is Abraham Dwamena",
+            "A developer and editor",
+            "A YouTuber and app dev",
+            "Cool and fun to be with 🤪",
+            "God is good",
+            "So love Jesus"
+        ];
+
+        let phraseIndex = 0;
+        let letterIndex = 0;
+        let isDeleting = false;
+
+        function typeAnimation() {
+            const currentPhrase = phrases[phraseIndex];
+            if (isDeleting) {
+                dynamicText.textContent = currentPhrase.substring(0, letterIndex--);
             } else {
-                // Restart the typing animation
-                setTimeout(restart, 1500);
+                dynamicText.textContent = currentPhrase.substring(0, letterIndex++);
+            }
+
+            if (!isDeleting && letterIndex === currentPhrase.length) {
+                isDeleting = true;
+                setTimeout(typeAnimation, 1500);
+            } else if (isDeleting && letterIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(typeAnimation, 500);
+            } else {
+                setTimeout(typeAnimation, isDeleting ? 50 : 100);
             }
         }
-    }
 
-    function erase() {
-        if (charIndex >= 0) {
-            textElement.textContent = texts[textIndex].substring(0, charIndex - 1);
-            charIndex--;
-            setTimeout(erase, 50); // Adjust the erasing speed here (milliseconds)
-        } else {
-            textIndex = (textIndex + 1) % texts.length;
-            setTimeout(type, 500); // Pause before typing the next line
-        }
-    }
-
-    function restart() {
-        textIndex = 0;
-        charIndex = 0;
-        textElement.textContent = '';
-        type();
-    }
-
-    // Start the typing animation when the page loads
-    window.addEventListener('load', () => {
-        type();
-    });
-        </script>
+        window.onload = () => typeAnimation();
+    </script>
 </body>
-    </html>
+</html>
