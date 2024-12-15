@@ -1,225 +1,219 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AB Alight Motion Download</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmF/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <style>
-      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Arial', sans-serif;
+        }
 
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: ;
-             image */
-    background-image:url('./darkmaker.jpg');
-    background-size: cover;  
-    background-repeat: no-repeat;
-}
-
-/*  😅😅😅🥲coded this css for the body*/
-        }
-
-        * {
-            padding: 0;
-            margin: 0;
-            scroll-behavior: smooth;
-        }
-
-        
-      .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-        p {
-            font-size: 15px;
-            margin-bottom: 20px;
-            text-align: center 
-        }
-
-        .footer p {
-            margin: 0;
-        }
-
-        .footer a {
+            background: linear-gradient(to bottom, #111, #333);
             color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #333;
-            color: #ECE5DD;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
+            background: rgba(0, 0, 0, 0.8);
+            position: sticky;
             top: 0;
-            width: 100%;
-            z-index: 100;
+            z-index: 10;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        main {
-            padding: 20px;
+        header h1 {
+            font-size: 1.5rem;
         }
 
-        a:link {
-            color: green;
-            background-color: transparent;
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
             text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s ease;
         }
 
-        a:visited {
-            color: green;
-            background-color: transparent;
-            text-decoration: none;
+        nav ul li a:hover {
+            color: #00aaff;
         }
 
-        a:hover {
-            color: blue;
-            background-color: transparent;
+        .hero {
+            height: 60vh;
+            background: url('./darkmaker.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
         }
 
-        #para {
-            font-size: 25px;
-            text-align: center; /* Center-align #para element */
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
 
-       
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
         main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;  
+            padding: 40px 20px;
+            gap: 40px;
+        }
+
+        .card {
+            background: #222;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #00aaff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .card a:hover {
+            color: #0088cc;
+        }
+
+        .card button {
+            background-color: #1f2427;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #0088cc;
+        }
+
+        footer {
+            background: #000;
+            color: #aaa;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #0088cc;
         }
 
         
-        @media (max-width: 768px) {
-            header {
-                flex-direction: row;
-                justify-content: center;
-            }
+        .typing-container {
+            text-align: center;
+            margin: 40px auto;
+            font-size: 1.5rem;
+            color: #00aaff;
+            white-space: nowrap;
+            overflow: hidden;
         }
-         .cursor {
-    animation: blink 1s step-start infinite;
-}
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
     </style>
 </head>
 <body>
+
 <header>
-    <h1>ANIME AREQUIPA😇</h1>
+    <h1>Anime Arequipa 😇</h1>
+    <nav>
+        <ul>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#groups">Groups</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
 </header>
 
-<main>
-
-<div>
-    <h1>WELCOME AREQUIPA OFFICIAL WEBSITE</h1>
-    <br>
-</div>
-<div>
-    <br>
-    <br>
-    <br>
-    <br>
-<br>
-    <br>
-    <br>
-    <br>
-<br>
-    <br>
-<br>
-    <br>
-<br>
-    <br>
-<br>
-<br>
-
-
-    
-<H3>CLICK THE LINK <br>BELOW <br><br>
-<br>
-<br>
-<br>
-<br>TO DOWNLOAD ALIGHT MOTION APP </H3>
-<p align="center">👇</p>
-</div>
-<div>
-    <p><button><a href="https://alightmotion.app/dl">Click to download</a></button></p>
-</div>
-
-<H3>
-    AVU MOD LINK BELOW CLICK TO DOWNLOAD👇
-</H3>
-
-<div>
-    <p><button><a
-            href="https://files.apkmodking.com/AVU_1.6.2_Mod%20Apkmodking.apk">Click to download</a></button></p>
-</div>
-<div>
-    <br>
+<section class="hero">
     <div>
-    
-                    <p id="text"></p>
-    <br>
-     
-    <center><h1>Abraham Dwamena -Bot Developer</h1></center>
-</div>
-<div>
-<pre>
-<p id="para">Join our Anime groups<br> below for<br> more updates👇</p>
-
-<p>1) Join our Whatsapp community Anime AREQUIPA
-<button><a href="https://chat.whatsapp.com/L5eaZuwuHDkCWQzkGRexgY">https://chat.whatsapp.com/L5eaZuwuHDkCWQzkGRexgY</a>
-</button></p>
-<p>2) Amv edit tutorial for beginners 💠
-<button><a href="https://chat.whatsapp.com/GLtgOCVTzgkCQkZ8xcZ8QZ">https://chat.whatsapp.com/LF7gErzhDKXKUi62vZPqrB</a>
-</button></p>
-<p>3) ROMANS-ANIME♥
-<button><a href="https://chat.whatsapp.com/DHGh8KP2QGrDOt7lFBWtJM">https://chat.whatsapp.com/GLtgOCVTzgkCQkZ8xcZ8QZ</a>
-</button></p>
-<p>4) 🌙☄ 𝔸ℕ𝕀𝕄𝔼 𝔸ℝ𝔼ℚ𝕌𝕀ℙ𝔸 🌙🌙
-<button><a href="https://chat.whatsapp.com/EKeNBKlZPoICcHCJ227P61">https://chat.whatsapp.com/EKeNBKlZPoICcHCJ227P61</a>
-</button></p>
-<p>5) M💫0💫B💱
-<button><a href="https://chat.whatsapp.com/Gxo3EdzHMaJaTNurj4zqT">https://chat.whatsapp.com/Gxo3EdzHMaJaTNurj4zqT</a></button></p>
-</pre>
-</div>
-<div class="arrow-btn">
-    <a href="#"><span class="fa-solid fa-arrow-up"></span></a>
-</div>
-</main>
-<section class="footer">
-    <p>&copy; COPYRIGHT ABRAHAM DWAMENA 2023</p>
+        <h1>Welcome to Anime Arequipa</h1>
+        <p>Your go-to place for Alight Motion downloads and more!</p>
+    </div>
 </section>
-</body>
-  <script>
-     const textElement = document.getElementById('text');
+
+
+<div class="typing-container">
+    <span id="text"></span><span class="cursor">|</span>
+</div>
+
+<main>
+    <div class="card" id="download">
+        <h3>Download Alight Motion</h3>
+        <p>Click below to download the latest version of Alight Motion.</p>
+        <button><a href="https://alightmotion.app/dl" target="_blank">Download Now</a></button>
+    </div>
+
+    <div class="card">
+        <h3>AVU MOD APK</h3>
+        <p>Get the modified version of AVU here.</p>
+        <button><a href="https://files.apkmodking.com/AVU_1.6.2_Mod%20Apkmodking.apk" target="_blank">Download MOD</a></button>
+    </div>
+
+    <div class="card" id="groups">
+        <h3>Join Our Anime Groups</h3>
+        <p>Stay updated and connect with fellow anime fans!</p>
+        <a href="https://chat.whatsapp.com/L5eaZuwuHDkCWQzkGRexgY" target="_blank">Join Group</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Abraham Dwamena - <a href="https://wa.me/233533763772">Contact Me</a></p>
+</footer>
+
+<script>
+    const textElement = document.getElementById('text');
     const cursorElement = document.querySelector('.cursor');
-    const additionalTextElement = document.getElementById('additional-text');
     const texts = [
         "My name is Abraham Dwamena",
         "a developer",
@@ -237,40 +231,27 @@
         if (charIndex < texts[textIndex].length) {
             textElement.textContent += texts[textIndex].charAt(charIndex);
             charIndex++;
-            setTimeout(type, 100); // Adjust the typing speed here (milliseconds)
+            setTimeout(type, 100);
         } else {
-            // Show additional text for a few seconds
-            if (textIndex !== texts.length - 1) {
-                setTimeout(erase, 1500);
-            } else {
-                // Restart the typing animation
-                setTimeout(restart, 1500);
-            }
+            setTimeout(erase, 1500);
         }
     }
 
     function erase() {
-        if (charIndex >= 0) {
+        if (charIndex > 0) {
             textElement.textContent = texts[textIndex].substring(0, charIndex - 1);
             charIndex--;
-            setTimeout(erase, 50); // Adjust the erasing speed here (milliseconds)
+            setTimeout(erase, 50);
         } else {
             textIndex = (textIndex + 1) % texts.length;
-            setTimeout(type, 500); // Pause before typing the next line
+            setTimeout(type, 500);
         }
     }
 
-    function restart() {
-        textIndex = 0;
-        charIndex = 0;
-        textElement.textContent = '';
-        type();
-    }
-
-    // Start the typing animation when the page loads
     window.addEventListener('load', () => {
         type();
     });
-           
-        </script>
+</script>
+
+</body>
 </html>
